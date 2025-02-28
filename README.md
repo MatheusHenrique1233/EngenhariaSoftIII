@@ -3,10 +3,10 @@
 
 # INTEGRANTES
 
-MATHEUS HENRIQUE
-ANTONIO PABLO
-JAILSON ALVES
-LINCOLN CESAR
+MATHEUS HENRIQUE;
+ANTONIO PABLO;
+JAILSON ALVES;
+LINCOLN CESAR;
 
 # NOME DO PROJETO
 
@@ -14,6 +14,8 @@ SolucionaLagoa
 
 
 # DESCRIÇÃO DO PROBLEMA
+
+O problema encontrado é um poblema que está presente em muitas cidades brasileira que é ao que diz respeito à infraestrutura básica de uma cidade. Abaixo está exemplificado alguns dos problemas comumente encontrados em cidades brasileiras, especificamente a cidade de Lagoa de São Francisco que é o tema do nosso projeto.
 
 Infraestrutura básica:
 
