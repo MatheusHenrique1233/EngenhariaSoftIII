@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema web para descrição de problemas urbanos na cidade de Pedro II - Paiuí">
+    <title>Relatório de Ocorrências</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style-index.css') }}">
+    <!-- Link do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link do Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Cabeçalho com Logo e Menu -->
+    <header class=" py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logo do Sistema -->
+            <img src="../static/images/letreiro-logo.png" alt="Logo do Sistema" class="img-logo">
+
+
+            <!-- Menu de Navegação -->
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="{{url_for('sobre')}}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="sobre.html">Informações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="{{url_for('cadastro_usuario')}}">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="{{ url_for('sair') }}">Sair</a>
+                    </li>
+
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Container para conteúdo -->
+    <div class="container mt-5">
+
+        <!-- Texto Explicativo -->
+        <p class="mb-5">
+            Esta página exibe um relatório das principais ocorrências em diferentes bairros da cidade. O sistema monitora problemas como buracos nas ruas, falta de iluminação, acúmulo de lixo, entre outros. Além disso, mostramos a quantidade de problemas pendentes e resolvidos por bairro.
+        </p>
+
+        <!-- Tabela de Dados e Gráfico -->
+        <div class="row">
+            <!-- Tabela de Ocorrências -->
+            <div class="col-md-6">
+                <h2 class="text-center">Tabela de Ocorrências (Top 10 Bairros)</h2>
+                <table class="table table-striped table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Bairro</th>
+                            <th>Problemas em Andamento</th>
+                            <th>Problemas Resolvidos</th>
+                            <th>Problemas Pendentes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Centro</td>
+                            <td>5</td>
+                            <td>12</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Pedro II</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Alto São Sebastião</td>
+                            <td>3</td>
+                            <td>6</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Areia Branca</td>
+                            <td>4</td>
+                            <td>9</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Barra dos Medeiros</td>
+                            <td>6</td>
+                            <td>10</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Boa Esperança</td>
+                            <td>2</td>
+                            <td>7</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Caixa D'água</td>
+                            <td>8</td>
+                            <td>5</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Capelinha</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Cristo Rei</td>
+                            <td>9</td>
+                            <td>3</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Engenho Novo</td>
+                            <td>10</td>
+                            <td>6</td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Gráfico de Ocorrências por Bairro -->
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <canvas id="graficoOcorrencias"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class=" text-center py-3 mt-5">
+        <a href="index.html"><p>© ADS III - Todos os direitos reservados</p></a>
+    </footer>
+
+    <!-- Script para configurar o gráfico Chart.js -->
+    <script>
+        // Gráfico de Ocorrências por Bairro
+        var ctx = document.getElementById('graficoOcorrencias').getContext('2d');
+        var graficoOcorrencias = new Chart(ctx, {
+            type: 'pie', // Tipo de gráfico (pizza)
+            data: {
+                labels: ['Centro', 'Pedro II', 'Alto São Sebastião', 'Areia Branca', 'Barra dos Medeiros', 'Boa Esperança', 'Caixa D\'água', 'Capelinha', 'Cristo Rei', 'Engenho Novo'], // Nomes dos bairros
+                datasets: [{
+                    label: 'Ocorrências',
+                    data: [12, 8, 6, 9, 10, 7, 5, 9, 3, 6], // Quantidade de ocorrências por bairro
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(255, 99, 132, 0.6)',
+                        'rgba(255, 206, 86, 0.6)',
+                        'rgba(54, 162, 235, 0.6)',
+                        'rgba(153, 102, 255, 0.6)',
+                        'rgba(201, 203, 207, 0.6)',
+                        'rgba(255, 159, 64, 0.6)',
+                        'rgba(199, 21, 133, 0.6)',
+                        'rgba(34, 139, 34, 0.6)',
+                        'rgba(75, 0, 130, 0.6)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Ocorrências Resolvidas por Bairro'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

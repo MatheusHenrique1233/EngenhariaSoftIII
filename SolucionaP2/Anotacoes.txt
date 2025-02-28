@@ -1,0 +1,11 @@
+
+cadastrar usuario 
+registra o ocorrencia
+login usuario
+
+arquivos css vão na sub pasta css dentro da pasta staic.
+
+adiciona data a ocorrencia
+
+
+ <form action="{{ url_for('registrar_ocorrencia') }}" method="POST" enctype="multipart/form-data">

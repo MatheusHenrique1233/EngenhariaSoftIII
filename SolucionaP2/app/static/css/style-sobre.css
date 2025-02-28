@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.barra{
+  background-color: #02B577;
+  padding: 40px;
+}
+
+footer{
+  background-color: #02B577;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  background-color: #ffffff;
+}
+
+.conteudo{
+  margin-top: -90px;
+  font-family: "Kanit", sans-serif;
+}
+
+.titulo{
+  font-size: 49px;
+  color: black;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding-bottom: 18px;
+  margin-bottom: 20px;
+}
+
+span{
+  color: #F65628;
+}
+
+.section-primaria {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -40px;
+}
+
+.conteudo-escrito{
+  font-size: 19px;
+  color: #333333;
+  margin-top: 99px;
+  padding: 0 0 0 80px;
+}
+
+.video-robo{
+  width: 700px;
+  height: 800px;
+  padding: 0 80px 0 0;
+}
+
+.realizar-ocorrencia{
+  text-decoration: none;
+  color: black;
+}
+
+.realizar-ocorrencia:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.botao-ocorrencia{
+  font-family: "Kanit", sans-serif;
+  transition: 1s;
+  width: 240px;
+  margin-left: 16%;
+  margin-top: 24px;
+  margin-bottom: 35px;
+  padding: 19px; 
+  border:2px solid red;
+  background-color: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px; 
+}
+
+.botao-ocorrencia:hover {
+  background-color: rgb(235, 45, 45);
+  color: white;
+}
+
+.colunas{
+  font-size: 20px;
+}
+
+video{
+  width: 100px;
+  height: 100px;
+}
+.botao-voltar{
+  transition: 1s;
+  width: 270px;
+  margin-left: 30%;
+  margin-top: 32px;
+  padding: 10px; 
+  background-color: transparent;
+  color: #F65628;
+  border-color: #F65628;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.botao-voltar:hover{
+  transition: 1s;
+  border-radius: 6px;
+  background-color: #F65628;
+  color: black;
+  opacity: 0.2;
+
+}
+.voltar{
+  text-decoration: none;
+  color: #F65628;
+  font-size: 18px;
+  
+}
+
+.rodape {
+  font-family: "Kanit", sans-serif;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+  padding: 10px 0 10px;
+}
+
+.logo-ads{
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+

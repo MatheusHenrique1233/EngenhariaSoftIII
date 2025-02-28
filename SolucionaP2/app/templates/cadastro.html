@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema web para descrição de problemas urbanos na cidade de Pedro II - Piauí"> 
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style-cadastro.css') }}">
+
+</head>
+
+<body>
+
+    <main>
+        <section class="principal">
+            <video src="../static/images/brain-video-sistema.mp4" autoplay loop muted></video>
+
+
+            <div class="card-cadastro">
+                <h4 class="titulo-cadastro">Cadastro</h4>
+
+                
+                <form class="formulario" action="/cadastro/" method="POST">
+                    <div class="campo-grupo lado-a-lado">
+                        <div class="campo-lado">
+                            <label for="nome" class="formulario-label">Nome:</label>
+                            <input type="text" class="formulario-input" id="nome" name="nome" placeholder="Nome" required>
+                        </div>
+                        <div class="campo-lado">
+                            <label for="sobrenome" class="formulario-label">Sobrenome:</label>
+                            <input type="text" class="formulario-input" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required>
+                        </div>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="cpf" class="formulario-label">CPF:</label>
+                        <input type="text" class="formulario-input" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="bairro" class="formulario-label">Bairro:</label>
+                        <input type="text" class="formulario-input" id="bairro" name="bairro" placeholder="Ex: Vila Kolping" required>
+                    </div>
+
+                    <div class="campo-grupo lado-a-lado">
+                        <div class="campo-lado">
+                            <label for="endereco" class="formulario-label">Endereço:</label>
+                            <input type="text" class="formulario-input" id="endereco" name="endereco" placeholder="Ex: Rua Sete de Setembro" required>
+                        </div>
+                        <div class="campo-lado">
+                            <label for="numero_casa" class="formulario-label">Número:</label>
+                            <input type="text" class="formulario-input" id="numero_casa" name="numero_casa" placeholder="Ex: 999" required>
+                        </div>
+                    </div>                    
+
+                    <div class="campo-grupo">
+                        <label for="email" class="formulario-label">Email:</label>
+                        <input type="email" class="formulario-input" id="email" name="email" placeholder="Ex: email@gmail.com" required>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="senha" class="formulario-label">Senha:</label>
+                        <input type="password" class="formulario-input" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="confirma_senha" class="formulario-label">Confirmar Senha:</label>
+                        <input type="password" class="formulario-input" id="confirma_senha" name="confirma_senha" placeholder="Confirme sua senha" required>
+                    </div>
+            
+                    <button class="botao-enviar" type="submit">Enviar</button>
+                </form>
+                
+                <p class="paragrafo-voltar">Já têm uma conta? <a href="{{url_for('login_usuario')}}" class="voltar"> Login</a></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

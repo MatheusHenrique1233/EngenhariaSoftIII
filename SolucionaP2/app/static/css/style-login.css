@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  }
+
+body {
+  font-family: "Kanit", sans-serif;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+video {
+  width: 700px;
+  height: 500px;
+  height: auto;
+  align-items: center;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  height: 500px;
+  width: 700px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+.formulario {
+  display: block;
+  flex-direction: column;
+  margin: auto;
+  padding: 50px;
+}
+
+.titulo-formulario{
+  text-align: center;
+  font-weight: bold;
+  color: #02B577;
+  font-size: 39px;
+  width: 120%;
+  margin-left: -30px;
+  letter-spacing: 1px;
+  margin-top: 40px;
+}
+
+.p-formulario{
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+.formulario-label {
+  margin: 5px;
+  margin-bottom: 12px;
+
+}
+
+.formulario-input {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  border-color: #000000;
+}
+
+.formulario-input:hover{
+  border-color: #02B577;
+}
+.esqueceu-senha{
+  font-family: "Kanit", sans-serif;
+  color: #02B577;
+  text-decoration: none;
+  text-align: right;
+  display: block;
+}
+
+.botao-entrar {
+  font-family: "Kanit", sans-serif;
+  transition: 1s;
+  width: 150px;
+  margin-left: 30%;
+  margin-top: 10px;
+  padding: 10px; 
+  background-color: #02B577;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px; 
+   
+}
+
+.botao-entrar:hover {
+  background-color: rgb(61, 149, 145, 0.4);
+  color: #000000;
+}
+
+
+.cadastro{
+  font-family: "Kanit", sans-serif;
+  align-items: center;
+  text-align: center;
+  margin-top: 28px;
+}
+
+.cadastro a {
+  color: #02B577;
+  text-decoration: none;
+}
+  

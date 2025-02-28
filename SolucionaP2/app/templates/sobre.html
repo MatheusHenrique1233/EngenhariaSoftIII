@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sistema web para descrição de problemas urbanos na cidade de Pedro II - Paiuí">
+  <title>Sobre a SolucionaPII</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style-sobre.css') }}">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <header class="barra"></header>
+
+  <main class="conteudo">
+    <section class="section-primaria">
+      <div class="conteudo-escrito">
+        <h1 class="titulo">Seja bem-vindo(a) a Soluciona<span>P2</span>!</h1>
+        <p class="conteudo-paragrafo">
+          É um sistema Web de Relatório de Ocorrências Urbanas de Pedro II, Piauí! 
+          Este é o seu espaço para colaborar com o bem-estar da cidade, reportando problemas como buracos nas 
+          ruas, falta de iluminação pública e outros desafios urbanos. Nosso objetivo é facilitar a comunicação 
+          entre você, cidadão, e os responsáveis pela manutenção da nossa cidade, garantindo uma resposta mais 
+          rápida e eficiente para as suas demandas. Registre sua ocorrência, acompanhe o andamento e contribua 
+          para fazer de Pedro II um lugar melhor para todos. Juntos, podemos melhorar nosso espaço urbano!
+        </p>
+        <button class="botao-ocorrencia">
+          <a href="{{url_for('registrar_ocorrencia')}}" class="realizar-ocorrencia">Realizar Ocorrência</a>
+        </button>
+      </div>
+      <a href="index.html"><video src="../static/images/robo-video-sistema.mp4" autoplay loop muted class="video-robo"></video></a>
+    </section>
+
+    <div class="container text-center">
+      <div class="row colunas">
+        <!--Primeiro video-->
+        <div class="col">
+          <video src="../static/images/comunity-video-sistema.mp4" autoplay loop muted></video><br>
+          Sistema web voltado para cidadãos que desejam reportar problemas urbanos.
+        </div>
+        <!--Ultimo video-->
+        <div class="col order-5">
+          <video src="../static/images/todo-video-sistema.mp4" autoplay loop muted></video><br>
+          Através do site, os usuários podem registrar ocorrências com informações essenciais.
+        </div>
+        <!--Video do meio-->
+        <div class="col order-1">
+          <video src="../static/images/lupa-video-sistema.mp4" autoplay loop muted></video><br>
+          A SolucionaP2 é uma plataforma simples e intuitiva.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="rodape">
+      <img src="{{ url_for('static', filename='images/logo-ads.png') }}" class="logo-ads" alt="Logo ADS">
+    </div> 
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

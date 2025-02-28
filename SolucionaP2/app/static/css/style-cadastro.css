@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+main{
+    width: 90%;
+    
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.card-cadastro {
+    border: 2px solid #02B577;
+    border-radius: 6px;
+    padding: 10px 10px;
+    margin: 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    max-width: 700px;
+    float: right;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+video {
+    max-width: 600px; 
+    margin-right: 40px;
+}
+
+.titulo-cadastro {
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px; 
+    letter-spacing: 2px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    margin: -10px 0 -10px;
+}
+
+.campo-grupo {
+    margin-bottom: 10px; 
+}
+
+.campo-lado {
+    flex: 1; 
+    margin-right: 10px; 
+}
+
+.campo-lado:last-child {
+    margin-right: 0; 
+}
+
+.lado-a-lado {
+    display: flex; 
+}
+
+.formulario-label {
+    margin-bottom: 10px; 
+}
+
+.formulario-input {
+    width: 100%; 
+    padding: 10px; 
+    border-radius: 5px; 
+    border-color: #000000;
+}
+
+.formulario-input:hover{
+    border-color: #02B577;
+}
+
+.botao-enviar {
+    font-family: "Kanit", sans-serif;
+    transition: 1s;
+    width: 150px;
+    margin-left: 35%;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    padding: 10px; 
+    background-color: #02B577;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; 
+     
+}
+
+.botao-enviar:hover {
+    background-color: rgb(61, 149, 145, 0.4);
+    color: #000000;
+}
+
+.paragrafo-voltar{
+    text-align: center;
+}
+
+.voltar {
+    color: #02B577;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "Kanit", sans-serif;
+}

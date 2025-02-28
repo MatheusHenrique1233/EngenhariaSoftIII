@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'kanit', system-ui;
+    color: black;
+}
+
+header, footer {
+    background-color: #02B577;
+}
+
+.img-logo{
+    padding: 10px 0 0;
+    margin-left: 150px;
+}
+
+.nav-item{
+    border-radius: 6px;
+}
+
+.nav-item:hover{
+    background-color: #F65628;
+    color: black;
+}
+
+p {
+    width: 80%;
+    margin: auto;
+    font-weight: 600;
+}
+.table tbody tr {
+    background-color: #f8f9fa; 
+}
+
+.table tbody tr:hover {
+    background-color: #e0e0e0; 
+}
+
+#graficoOcorrencias {
+    width: 200px;
+    height: 200px;
+}
+
+#footer a{
+    color: black;
+    text-decoration: none;
+}
