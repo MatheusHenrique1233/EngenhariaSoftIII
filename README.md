@@ -10,12 +10,12 @@ LINCOLN CESAR;
 
 # NOME DO PROJETO
 
-SolucionaLagoa
+SolucionaP2
 
 
 # DESCRIÇÃO DO PROBLEMA
 
-O problema encontrado é um poblema que está presente em muitas cidades brasileira que é ao que diz respeito à infraestrutura básica de uma cidade. Abaixo está exemplificado alguns dos problemas comumente encontrados em cidades brasileiras, especificamente a cidade de Lagoa de São Francisco que é o tema do nosso projeto.
+O problema encontrado é um poblema que está presente em muitas cidades brasileira que é ao que diz respeito à infraestrutura básica de uma cidade. Abaixo está exemplificado alguns dos problemas comumente encontrados em cidades brasileiras, especificamente a cidade de Pedro II que é o tema do nosso projeto.
 
 Infraestrutura básica:
 
@@ -26,12 +26,32 @@ Iluminação pública: A falta de iluminação adequada em algumas áreas pode a
 
 # SOLUÇÃO PROPOSTA
 
-A **SolucionaLagoa** é um sistema web desenvolvido para facilitar o registro de ocorrências urbanas na cidade de Pedro II. O objetivo principal é permitir que os cidadãos relatem problemas urbanos, como buracos nas ruas, terrenos baldios com lixo, e iluminação pública defeituosa, de forma simples e rápida.
+A **SolucionaP2** é um sistema web desenvolvido para facilitar o registro de ocorrências urbanas na cidade de Pedro II. O objetivo principal é permitir que os cidadãos relatem problemas urbanos, como buracos nas ruas, terrenos baldios com lixo, e iluminação pública defeituosa, de forma simples e rápida.
 
 # TECNOLOGIAS UTILIZADAS
 
+CSS;
+MYSQL;
+PYTHON;
+HTML;
+
+FRAMEWORK:
+
+FLASK
+
 # INSTRUÇÔES DE INSTALAÇÃO E USO
 
+É um sistema intuitivo e sem muitos problemas de uso. 
+
+
+
+
+
 # COMO CONTRIBUIR
+
+Comunicação direta;
+Agilidade na resolução de problemas;
+Melhoria da qualidade de vida;
+Participação cidadã.
 
 
